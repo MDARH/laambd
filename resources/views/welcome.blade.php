@@ -100,6 +100,12 @@
                             </li>
                         </ul>
                     </div>
+                    <div>
+                        <h3>খাওয়ার নিয়মাবলীঃ</h3>
+                        <ul>
+                            <li>সকালে নাস্তা খাওয়া পর এক চামচ।</li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
                     <img src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/01/image_ajS.webp?w=1024&ssl=1" alt="" class="w-96">
@@ -118,14 +124,42 @@
                     <span>+880 1606-700289</span>
                 </div>`
             </div>
-
+            <div>
+                <p>⭐⭐⭐ সম্মানিত কাস্টমারদের মতামত ⭐⭐⭐</p>
+            </div>
+            <div>
+                <div>
+                    <p>১ কেজি কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণ এর রেগুলার প্রাইস ২০০০ টাকা</p>
+                    <p>তবে বর্তমানে অফার প্রাইস ১৫৮০ টাকা</p>
+                </div>
+                <div>
+                    <p>১ কেজি কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণ এর রেগুলার প্রাইস ২০০০ টাকা</p>
+                    <p>তবে বর্তমানে অফার প্রাইস ১৫৮০ টাকা</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        অবশ্যই ৪৫/৬০ দিন খেতে হবে সেক্ষেত্রে ১ কেজির ফুল কোর্স অর্ডার করা উত্তম হবে এবং ফুল কোর্স শেষ করতে পারলে যে রোগের জন্য নিচ্ছেন সেই রোগ টি ভিতর থেকে সারাজিবনের জন্য নিঃশেষ হয়ে যাবে ইনশাআল্লাহ
+                    </p>
+                </div>
+                <div>
+                    <p>আজকে অর্ডার করলে হোম ডেলিভারি চার্জ ফ্রি।</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="bg-[#028833]">
-        section 2
+    <section>
+        আজকে অর্ডার করলে হোম ডেলিভারি চার্জ ফ্রি।
     </section>
-    <footer>
-        Footer
+    <footer class="bg-[#064403] flex flex-col justify-center items-center text-white font-semibold py-4">
+        <ul class="flex gap-2">
+            <li>Privacy Policy</li>
+            <li>Terms & conditions</li>
+        </ul>
+        <div>  
+            Copyright © 2023 Laam BD | All Rights Reserved
+        </div>
     </footer>
 
 </body>

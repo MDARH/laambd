@@ -28,14 +28,14 @@
             </p>
         </div>
         <div class="my-5 px-4">
-            <div class="border-4 border-[#ffff00] rounded-3xl mx-auto lg:mx-24 my-6 px-10">
+            <div class="border-4 border-[#ffff00] rounded-3xl w-[990px] h-[550px] mx-auto lg:mx-24 overflow-hidden">
 
-                <div class="h-fit px-4">
-                    <iframe class="elementor-video" frameborder="0" allowfullscreen="" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="আমাদের মিশ্রণ টি নিয়ে ৩ জন ডাক্টরের মতামত" width="500" height="400" src="https://www.youtube-nocookie.com/embed/4MxhPk6Prgc?controls=1&amp;rel=0&amp;playsinline=1&amp;modestbranding=0&amp;autoplay=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Flaambd.com&amp;widgetid=1" id="widget2"></iframe>
-                </div>
+                <iframe width="990" height="550" src="https://www.youtube.com/embed/4MxhPk6Prgc?si=odSQ_3GiN7_tGBzC" title="আমাদের মিশ্রণ টি নিয়ে ৩ জন ডাক্টরের মতামত"></iframe>
+
+
             </div>
         </div>
-        <div class="py-4 ">
+        <div class="py-4">
             <button class="flex items-center gap-2 text-white bg-[#05B858] text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
                 <x-lineawesome-hand-point-right class="h-8" /> <span>অর্ডার করতে ক্লিক করুন</span>
             </button>
@@ -43,10 +43,9 @@
     </div>
     <section class="bg-[#028833]">
         <div class="py-4 mx-2">
-            <h2 class="text-[#ffec00] text-center text-xl font-bold border-2 rounded-3xl bg-[#008000] p-2">কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণটি আপনি কেন খাবেন?</h2>
+            <h2 class="text-[#ffec00] text-center text-xl font-bold border-2 rounded-3xl bg-[#008000]  p-2">কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণটি আপনি কেন খাবেন?</h2>
         </div>
         <div class="border-4 border-[#ffec00] shadow-3xl rounded-3xl mx-2 my-4">
-
             <ul class="p-2">
                 <li class="flex gap-2 items-center text-white text-lg border-b-2 border-dotted">
                     <x-fas-check-circle class="text-[#ffec00] h-8" /> শারীরিক দুর্বলতা বা যৌন দুর্বলতা দূর করে আপনাকে উপহার দিবে সুখময় দাম্পত্য জীবন
@@ -58,12 +57,11 @@
                     <x-fas-check-circle class="text-[#ffec00] h-8" /> শারীরিক দুর্বলতা বা যৌন দুর্বলতা দূর করে আপনাকে উপহার দিবে সুখময় দাম্পত্য জীবন
                 </li>
                 <li class="flex gap-2 items-center text-white text-lg border-b-2 border-dotted">
-                    <x-fas-check-circle class="text-[#ffec00] h-8" /> শারীরিক দুর্বলতা বা যৌন দুর্বলতা দূর করে আপনাকে উপহার দিবে সুখময় দাম্পত্য জীবন
+                    <x-fas-check-circle class="text-[#ffec00] h-8" /> শারীরিক দুর্বলতা বা যৌন দুর্বলতা দূর করে আপনাকে উপহার দিবে সুখময় দাম্পত্য
                 </li>
                 <li class="flex gap-2 items-center text-white text-lg border-b-2 border-dotted">
                     <x-fas-check-circle class="text-[#ffec00] h-8" /> শারীরিক দুর্বলতা বা যৌন দুর্বলতা দূর করে আপনাকে উপহার দিবে সুখময় দাম্পত্য জীবন
                 </li>
-
             </ul>
         </div>
         <div class="px-2 pb-4">
@@ -84,7 +82,6 @@
                         <ul class="p-2">
                             <li class="flex gap-2 my-2 py-4 items-center text-white text-lg border-b-2 border-dotted">
                                 <x-fas-lightbulb class="text-[#ffec00] h-24" /> হার্টের সমস্যা যদি এখনো সমাধান না করে থাকেন তাহলে বড় বিপদের জন্য প্রস্তুত থাকুন কারন একবার যদি হার্ট অ্যাটাক হয়ে যায় তাহলে আপনার বাচার সম্ভাবনা খুবই কম থাকে
-
                             </li>
                             <li class="flex gap-2 my-2 py-4 items-center text-white text-lg border-b-2 border-dotted">
                                 <x-fas-lightbulb class="text-[#ffec00] h-24" /> হার্টের সমস্যা যদি এখনো সমাধান না করে থাকেন তাহলে বড় বিপদের জন্য প্রস্তুত থাকুন কারন একবার যদি হার্ট অ্যাটাক হয়ে যায় তাহলে আপনার বাচার সম্ভাবনা খুবই কম থাকে
@@ -104,7 +101,13 @@
                         <h3>খাওয়ার নিয়মাবলীঃ</h3>
                         <ul>
                             <li>সকালে নাস্তা খাওয়া পর এক চামচ।</li>
+                            <li>রাতে খাবারের পরে দুই চামচ।</li>
                         </ul>
+                        <div class="py-4 ">
+                            <button class="flex items-center gap-2 text-white bg-[#05B858] text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
+                                <x-lineawesome-hand-point-right class="h-8" /> <span>অর্ডার করতে ক্লিক করুন</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -116,7 +119,7 @@
     </section>
     <section class="bg-[#028833]">
         <div>
-            <h2>এটি সম্পূর্ণ হোমমেড একটি প্রোডাক্ট তাই কোন পার্শ্ব প্রতিক্রিয়া নেই। লিমিটেড স্টক, তাই দেরি না করে এখন-ই অর্ডার করুন।</h2>
+            <h2>এটি সম্পূর্ণ হোমমেড একটি প্রোডাক্ট তাই কোন পার্শ্ব প্রতিক্রিয়া নেই। <span>লিমিটেড স্টকলিমিটেড স্টক,</span> তাই দেরি না করে এখন-ই <span>অর্ডার করুন।</span></h2>
             <div class="px-2 pb-4">
                 <div class="flex justify-center items-center gap-2 font-hind text-3xl text-[#064403] font-bold bg-white border-2 border-[#ffec00] rounded py-2">
                     <span>কল করুন</span>

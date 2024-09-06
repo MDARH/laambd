@@ -29,10 +29,7 @@
         </div>
         <div class="my-5 px-4">
             <div class="border-4 border-[#ffff00] rounded-3xl w-[990px] h-[550px] mx-auto lg:mx-24 overflow-hidden">
-
                 <iframe width="990" height="550" src="https://www.youtube.com/embed/4MxhPk6Prgc?si=odSQ_3GiN7_tGBzC" title="আমাদের মিশ্রণ টি নিয়ে ৩ জন ডাক্টরের মতামত"></iframe>
-
-
             </div>
         </div>
         <div class="py-4">
@@ -41,9 +38,10 @@
             </button>
         </div>
     </div>
-    <section class="bg-[#028833]">
-        <div class="py-4 mx-2">
-            <h2 class="text-[#ffec00] text-center text-xl font-bold border-2 rounded-3xl bg-[#008000]  p-2">কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণটি আপনি কেন খাবেন?</h2>
+    <div class="bg-[#028833] flex flex-col justify-center items-center">
+
+        <div class="py-4 mx-2 text-[#ffec00] font-bold border-2 rounded-3xl bg-[#008000] p-2">
+            কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণটি আপনি কেন খাবেন?
         </div>
         <div class="border-4 border-[#ffec00] shadow-3xl rounded-3xl mx-2 my-4">
             <ul class="p-2">
@@ -71,11 +69,11 @@
                 <span>+880 1606-700289</span>
             </div>`
         </div>
-    </section>
+    </div>
     <section class="bg-[#064403]">
         <div class="mx-2 py-10">
-            <div class="flex flex-wrap justify-center items-center">
-                <div class="">
+            <div class="flex">
+                <div class="w-1/2">
                     <h2 class="text-[#ffec00] bg-[#008000] font-bold text-center text-2xl drop-shadow-2xl p-4 border-2 rounded-xl"> উপরের সমস্যা গুলোর সমাধান না করলে যে ভয়াবহ সমস্যা গুলো হবে</h2>
 
                     <div class="border-4 border-[#ffec00] shadow-3xl rounded-3xl mx-2 my-4">
@@ -110,9 +108,8 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/01/image_ajS.webp?w=1024&ssl=1" alt="" class="w-96">
-
+                <div class="w-1/2 mx-auto">
+                    <img class="mx-auto w-3/4 rounded border-2 border-[#ffec00]" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/01/image_ajS.webp?w=1024&ssl=1" alt="" class="w-96">
                 </div>
             </div>
         </div>
@@ -153,7 +150,43 @@
         </div>
     </section>
     <section>
-        আজকে অর্ডার করলে হোম ডেলিভারি চার্জ ফ্রি।
+        <div class="border text-4xl shadow ">
+            আজকে অর্ডার করলে হোম ডেলিভারি চার্জ ফ্রি।
+        </div>
+        <form action="" class="border-2 shadow-md border-[#064403]">
+
+            <div class="border rounded-md">
+                পরিমান সিলেক্ট করুন
+            </div>
+            <div>
+                <div>product 1</div>
+                <div>product 2</div>
+            </div>
+            <div class="flex justify-center">
+                <div>
+                    Billing Address
+                    <div>
+                        <label for="your_name">আপনার নাম লিখুন</label>
+                        <input type="text" placeholder="নাম লিখুন">
+                        <p>error</p>
+                    </div>
+                    <div>
+                        <label for="address">আপনার সম্পূর্ণ ঠিকানা লিখুন</label>
+                        <input type="text" placeholder="ঠিকানা লিখুন, থানা ও জেলা সহ">
+                    </div>
+                    <div>
+                        <label for="mobile_number">আপনার মোবাইল নাম্বার লিখুন</label>
+                        <input type="text" placeholder="মোবাইল নাম্বার">
+                    </div>
+                </div>
+                <div>
+                    Apnar Order
+                </div>
+            </div>
+            <div>
+                Button
+            </div>
+        </form>
     </section>
     <footer class="bg-[#064403] flex flex-col justify-center items-center text-white font-semibold py-4">
         <ul class="flex gap-2">

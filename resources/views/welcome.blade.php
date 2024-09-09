@@ -10,7 +10,7 @@
 
     <!-- Styles -->
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     <div class="bg-[#064403] flex flex-col justify-center items-center">
@@ -148,31 +148,51 @@
                 ⭐⭐⭐
             </div>
         </div>
-        <div class="w-10/12 flex gap-2">
-            <div class="border-2 border-[#ffec00] w-96">
+        <div class="w-10/12 flex flex-wrap gap-2 mx-auto">
+            <div class="border-2 border-[#ffec00] w-2/10">
                 <iframe width="380" height="550" src="https://www.youtube.com/embed/QbPghkSWvCc?si=QvRNMKhvJ9J9Bp_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
-            <div class="swiper h-9 w-96">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
+            <div class="w-8/10">
+                <div class="flex gap-2 transition-transform duration-500 relative overflow-hidden select-none items">
+                    <div class="w-1/4 flex-shrink-0 item item1">
+                        <img src="https://via.placeholder.com/250x550?text=Slide+1" alt="Slide 1" class="w-full">
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 item item2">
+                        <img src="https://via.placeholder.com/250x550?text=Slide+2" alt="Slide 2" class="w-full">
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 item item3">
+                        <img src="https://via.placeholder.com/250x550?text=Slide+3" alt="Slide 3" class="w-full">
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 item item4">
+                        <img src="https://via.placeholder.com/250x550?text=Slide+4" alt="Slide 4" class="w-full">
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 item item5">
+                        <img src="https://via.placeholder.com/250x550?text=Slide+5" alt="Slide 5" class="w-full">
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 item item6">
+                        <img src="https://via.placeholder.com/250x550?text=Slide+6" alt="Slide 6" class="w-full">
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 item item7">
+                        <img src="https://via.placeholder.com/250x550?text=Slide+7" alt="Slide 7" class="w-full">
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 item item8">
+                        <img src="https://via.placeholder.com/250x550?text=Slide+8" alt="Slide 8" class="w-full">
+                    </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+                <!-- Dot Navigation -->
+                <div class="flex justify-center mt-4">
+                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="0"></span>
+                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="1"></span>
+                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="2"></span>
+                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="3"></span>
+                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="0"></span>
+                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="1"></span>
+                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="2"></span>
+                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="3"></span>
+                </div>
             </div>
-
 
             {{-- <div class="relative w-full max-w-lg mx-auto">
                 <!-- Slideshow Images -->
@@ -298,29 +318,68 @@
     </footer>
 
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'vertical'
-            , loop: true,
+        const slider = document.querySelector('.items');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
 
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination'
-            , },
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+            console.log("erreerre", scrollLeft)
+        });
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next'
-                , prevEl: '.swiper-button-prev'
-            , },
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
 
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar'
-            , }
-        , });
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
 
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return; // stop the fn from running
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2;
+            slider.scrollLeft = scrollLeft - walk;
+
+            console.log('sdsd', scrollLeft)
+            console.log(slider.scrollLeft)
+        });
+
+
+        // touchEvents
+
+        slider.addEventListener('touchstart', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('touchend', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('touchcancel', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('touchmove', (e) => {
+            if (!isDown) return; // stop the fn from running
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2;
+            slider.scrollLeft = scrollLeft - walk;
+        });
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 </html>

@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <div class="bg-[#064403] flex flex-col justify-center items-center">
+    <section class="bg-[#064403] flex flex-col justify-center items-center">
         <div class="mx-auto py-8 px-2">
             <div class="border-2 px-2 border-[#ffff00] rounded-3xl shadow-inner">
                 <h1 class="text-[#ffff00] text-center font-bold font-hind text-2xl md:text-3xl lg:text-4xl drop-shadow-md px-2 py-4">হাজার হাজার টাকা অসুস্থ হয়ে নষ্ট করেছেন কিন্তু কোন সমাধান পাননি?</h1>
@@ -34,12 +34,12 @@
             </div>
         </div>
         <div class="py-4">
-            <button class="flex items-center gap-2 text-white bg-[#05B858] text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
+            <button class="flex items-center gap-2 text-white hover:text-[#ffec00] bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
                 <x-lineawesome-hand-point-right class="h-8" /> <span>অর্ডার করতে ক্লিক করুন</span>
             </button>
         </div>
-    </div>
-    <div class="bg-[#028833]">
+    </section>
+    <section class="bg-[#028833]">
         <div class="w-full md:w-8/12 mx-auto p-4">
 
             <h4 class="bg-[#008000] text-[#ffec00] text-center font-bold text-2xl p-4 border-2 rounded-3xl">
@@ -73,7 +73,7 @@
                 </div>`
             </div>
         </div>
-    </div>
+    </section>
     <section class="bg-[#064403]">
         <div class="w-full md:w-10/12 mx-auto p-4">
 
@@ -114,7 +114,7 @@
                                 <span class="text-[#ffec00]"> দুই চামচ।</span></li>
                         </ul>
                         <div class="py-4 ">
-                            <button class="flex items-center gap-2 text-white bg-[#05B858] text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
+                            <button class="flex items-center gap-2 text-white hover:text-[#ffec00] bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
                                 <x-lineawesome-hand-point-right class="h-8" /> <span>অর্ডার করতে ক্লিক করুন</span>
                             </button>
                         </div>
@@ -219,33 +219,37 @@
 
         </div>
     </section>
-    <section>
-        <div>
-            <div>
-                <p>১ কেজি কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণ এর রেগুলার প্রাইস ২০০০ টাকা</p>
-                <p>তবে বর্তমানে অফার প্রাইস ১৫৮০ টাকা</p>
+    <section class="bg-[#064403] py-4">
+        <div class="grid grid-cols-2 gap-2 w-10/12 mx-auto text-2xl text-center text-[#FFFFE2] font-hind font-bold">
+            <div class="flex border border-[#ffec00] rounded py-4 px-2">
+                <p>১ কেজি কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণ এর রেগুলার প্রাইস <br> <span>২০০০ টাকা</span></p>
+                <p>তবে বর্তমানে অফার প্রাইস <br> <span>১৫৮০ টাকা</span></p>
             </div>
-            <div>
-                <p>১ কেজি কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণ এর রেগুলার প্রাইস ২০০০ টাকা</p>
-                <p>তবে বর্তমানে অফার প্রাইস ১৫৮০ টাকা</p>
+            <div class="flex border border-[#ffec00] rounded py-4 px-2">
+                <p>১ কেজি কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণ এর রেগুলার প্রাইস <br> <span>২০০০ টাকা</span></p>
+                <p>তবে বর্তমানে অফার প্রাইস <br> <span>১৫৮০ টাকা</span></p>
             </div>
         </div>
-        <div>
-            <div>
-                <p>
-                    অবশ্যই ৪৫/৬০ দিন খেতে হবে সেক্ষেত্রে ১ কেজির ফুল কোর্স অর্ডার করা উত্তম হবে এবং ফুল কোর্স শেষ করতে পারলে যে রোগের জন্য নিচ্ছেন সেই রোগ টি ভিতর থেকে সারাজিবনের জন্য নিঃশেষ হয়ে যাবে ইনশাআল্লাহ
-                </p>
+        <div class="grid grid-cols-3 mx-auto w-10/12 text-center">
+            <div class="text-[#ffed12] text-2xl font-bold leading-9 my-8 col-span-2 px-4">
+                অবশ্যই ৪৫/৬০ দিন খেতে হবে সেক্ষেত্রে ১ কেজির ফুল কোর্স অর্ডার করা উত্তম হবে এবং ফুল কোর্স শেষ করতে পারলে যে রোগের জন্য নিচ্ছেন সেই রোগ টি ভিতর থেকে সারাজিবনের জন্য নিঃশেষ হয়ে যাবে ইনশাআল্লাহ
             </div>
-            <div>
-                <p>আজকে অর্ডার করলে হোম ডেলিভারি চার্জ ফ্রি।</p>
+            <div class="text-4xl font-bold font-hind my-8">
+                <p class="text-white my-4">আজকে অর্ডার করলে</p>
+                <p class="text-[#ffec00]">হোম ডেলিভারি চার্জ ফ্রি!</p>
             </div>
+        </div>
+        <div class="">
+            <button class="flex mx-auto items-center gap-2 text-white bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
+                <x-fas-cart-arrow-down class="h-5" /> <span>অর্ডার করুন</span>
+            </button>
         </div>
     </section>
     <section class="py-4">
-        <div class="border rounded-lg text-4xl shadow-laam mx-auto w-8/12 my-4 p-4">
-            <h6 class="text-center text-[#056C00] font-bold">
+        <div class="border rounded-lg text-3xl shadow-laam mx-auto w-8/12 my-4 p-4">
+            <h2 class="text-center text-[#056C00] font-bold font-tiro_bn">
                 অর্ডার করতে আপনার সঠিক তথ্য দিয়ে নিচের ফর্মটি সম্পূর্ণ পূরন করুন
-            </h6>
+            </h2>
         </div>
         <form action="" class="border-4 rounded-lg shadow-form border-[#098D2E] w-8/12 mx-auto">
             <div class="p-8">
@@ -379,6 +383,7 @@
             const walk = (x - startX) * 2;
             slider.scrollLeft = scrollLeft - walk;
         });
+
     </script>
 
 </body>

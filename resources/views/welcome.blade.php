@@ -275,7 +275,17 @@
                             <h4 class="text-left font-semibold">কালোজিরা রসুন মধু এবং ইরানি জাফরান মসলা ৫০০ গ্রাম</h4>
                         </div>
                         <div class="float-end">
-                            <input type=" ">
+                            <div class="flex items-center space-x-2">
+                                <!-- Decrement Button -->
+                                <button class="bg-gray-300 text-gray-700 hover:bg-gray-400 px-2 py-1 rounded-l" onclick="decrement()">−</button>
+
+                                <!-- Input Box -->
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" step="1" class="w-16 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+
+                                <!-- Increment Button -->
+                                <button class="bg-gray-300 text-gray-700 hover:bg-gray-400 px-2 py-1 rounded-r" onclick="increment()">+</button>
+                            </div>
+
                             <p>2,940.00৳</p>
                         </div>
                     </button>
@@ -299,6 +309,7 @@
                             <input type="text" id="mobile_number" placeholder="মোবাইল নাম্বার">
 
                         </div>
+                        
                     </div>
                     <div>
                         Apnar Order

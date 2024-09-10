@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="py-4">
-            <button class="flex items-center gap-2 text-white hover:text-[#ffec00] bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
+            <button class="flex items-center gap-2 text-white hover:text-[#ffec00] bg-[#05B858] hover:bg-black hover:animate-zigzag text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
                 <x-lineawesome-hand-point-right class="h-8" /> <span>অর্ডার করতে ক্লিক করুন</span>
             </button>
         </div>
@@ -114,7 +114,7 @@
                                 <span class="text-[#ffec00]"> দুই চামচ।</span></li>
                         </ul>
                         <div class="py-4 ">
-                            <button class="flex items-center gap-2 text-white hover:text-[#ffec00] bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
+                            <button class="flex items-center gap-2 text-white hover:text-[#ffec00] hover:animate-zigzag bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
                                 <x-lineawesome-hand-point-right class="h-8" /> <span>অর্ডার করতে ক্লিক করুন</span>
                             </button>
                         </div>
@@ -240,7 +240,7 @@
             </div>
         </div>
         <div class="">
-            <button class="flex mx-auto items-center gap-2 text-white bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
+            <button class="flex mx-auto items-center gap-2 text-white bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full hover:animate-zigzag">
                 <x-fas-cart-arrow-down class="h-5" /> <span>অর্ডার করুন</span>
             </button>
         </div>

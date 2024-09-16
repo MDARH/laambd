@@ -237,6 +237,9 @@
             <div class="text-4xl font-bold font-hind my-8">
                 <p class="text-white my-4">আজকে অর্ডার করলে</p>
                 <p class="text-[#ffec00]">হোম ডেলিভারি চার্জ ফ্রি!</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+                    <path d="M3,146.1c17.1-8.8,33.5-17.8,51.4-17.8c15.6,0,17.1,18.1,30.2,18.1c22.9,0,36-18.6,53.9-18.6 c17.1,0,21.3,18.5,37.5,18.5c21.3,0,31.8-18.6,49-18.6c22.1,0,18.8,18.8,36.8,18.8c18.8,0,37.5-18.6,49-18.6c20.4,0,17.1,19,36.8,19 c22.9,0,36.8-20.6,54.7-18.6c17.7,1.4,7.1,19.5,33.5,18.8c17.1,0,47.2-6.5,61.1-15.6"></path>
+                </svg>
             </div>
         </div>
         <div class="">
@@ -257,68 +260,66 @@
                     পরিমান সিলেক্ট করুন
                 </div>
                 <div class="grid grid-cols-2 gap-2">
-                    <button class="border rounded p-6">
+                    <div class="border rounded p-6">
                         <div class="flex gap-2">
                             <input type="radio">
                             <img class="h-12" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/01/018-4.png?resize=300%2C300&ssl=1" alt="Product">
                             <h4 class="text-left font-semibold">কালোজিরা রসুন মধু এবং ইরানি জাফরান মসলা ৫০০ গ্রাম</h4>
                         </div>
-                        <div class="float-end">
-                            <input type="number">
-                            <p>2,940.00৳</p>
-                        </div>
-                    </button>
-                    <button class="border rounded p-6">
-                        <div class="flex gap-2">
-                            <input type="radio">
-                            <img class="h-12" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/01/018-4.png?resize=300%2C300&ssl=1" alt="Product">
-                            <h4 class="text-left font-semibold">কালোজিরা রসুন মধু এবং ইরানি জাফরান মসলা ৫০০ গ্রাম</h4>
-                        </div>
-                        <div class="float-end">
-                            <div class="flex items-center space-x-2">
-                                <!-- Decrement Button -->
-                                <button class="bg-gray-300 text-gray-700 hover:bg-gray-400 px-2 py-1 rounded-l" onclick="decrement()">−</button>
-
-                                <!-- Input Box -->
-                                <input type="number" id="quantity" name="quantity" value="1" min="1" step="1" class="w-16 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
-
-                                <!-- Increment Button -->
-                                <button class="bg-gray-300 text-gray-700 hover:bg-gray-400 px-2 py-1 rounded-r" onclick="increment()">+</button>
+                        <div class="flex flex-wrap justify-end items-center gap-2">
+                            <div class="flex border rounded mt-4">
+                                <button class="text-gray-800 hover:bg-gray-100 px-2 py-1" onclick="decrement()">−</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" step="1" class="w-12 text-center no-arrows">
+                                <button class="text-gray-800 hover:bg-gray-100 px-2 py-1" onclick="increment()">+</button>
                             </div>
-
-                            <p>2,940.00৳</p>
+                            <p class="mt-4">2,940.00৳</p>
                         </div>
-                    </button>
+                    </div>
+                    <div class="border rounded p-6">
+                        <div class="flex gap-2">
+                            <input type="radio">
+                            <img class="h-12" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/01/018-4.png?resize=300%2C300&ssl=1" alt="Product">
+                            <h4 class="text-left font-semibold">কালোজিরা রসুন মধু এবং ইরানি জাফরান মসলা ৫০০ গ্রাম</h4>
+                        </div>
+                        <div class="flex flex-wrap justify-end items-center gap-2">
+                            <div class="flex border rounded mt-4">
+                                <button class="text-gray-800 hover:bg-gray-100 px-2 py-1" onclick="decrement()">−</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" step="1" class="w-12 text-center no-arrows">
+                                <button class="text-gray-800 hover:bg-gray-100 px-2 py-1" onclick="increment()">+</button>
+                            </div>
+                            <p class="mt-4">2,940.00৳</p>
+                        </div>
+                    </div>
+                   
                 </div>
-                <div class="">
-                    <div>
-                        বিলিং এড্রেস
-                        <div>
-                            <label for="name">আপনার নাম লিখুন</label>
-                            <input type="text" id="name" placeholder="নাম লিখুন">
+                <div class="grid grid-cols-2 gap-4 py-6">
+                    <div class="font-tiro_bn">
 
-                            <p>error</p>
+                        <h3 class="text-xl font-tiro_bn font-bold my-6">বিলিং এড্রেস</h3>
+                        <div class="flex flex-col text-md">
+                            <label class="text-[#098d2e] font-semibold" for="name">আপনার নাম লিখুন <span class="text-red-500">*</span></label>
+                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 font-semibold p-2" type="text" id="name" placeholder="নাম লিখুন">
                         </div>
-                        <div>
-                            <label for="address">আপনার সম্পূর্ণ ঠিকানা লিখুন</label>
-                            <input type="text" id="address" placeholder="ঠিকানা লিখুন, থানা ও জেলা সহ">
-
+                        <div class="flex flex-col text-md">
+                            <label class="text-[#098d2e] font-semibold" for="address">আপনার সম্পূর্ণ ঠিকানা লিখুন<span class="text-red-500">*</span></label>
+                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 font-semibold p-2" type="text" id="address" placeholder="ঠিকানা লিখুন, থানা ও জেলা সহ">
                         </div>
-                        <div>
-                            <label for="mobile_number">আপনার মোবাইল নাম্বার লিখুন</label>
-                            <input type="text" id="mobile_number" placeholder="মোবাইল নাম্বার">
-
+                        <div class="flex flex-col text-md">
+                            <label class="text-[#098d2e] font-semibold" for="mobile_number">আপনার মোবাইল নাম্বার লিখুন<span class="text-red-500">*</span></label>
+                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 font-semibold p-2" type="text" id="mobile_number" placeholder="মোবাইল নাম্বার">
                         </div>
-                        
                     </div>
                     <div>
-                        Apnar Order
+                        <h3 class="text-xl font-tiro_bn font-bold my-6">আপনার অর্ডার</h3>
+
+                        <div>
+                            
+                        </div>
+                        <div>
+                            এখানে ক্লিক করে অর্ডারটি সম্পন্ন করুন
+                        </div>
                     </div>
                 </div>
-                <div>
-                    এখানে ক্লিক করে অর্ডারটি সম্পন্ন করুন
-                </div>
-
             </div>
         </form>
     </section>
@@ -394,6 +395,19 @@
             const walk = (x - startX) * 2;
             slider.scrollLeft = scrollLeft - walk;
         });
+
+        // Quantity of Product
+        function increment() {
+            let input = document.getElementById('quantity');
+            input.value = parseInt(input.value) + 1;
+        }
+
+        function decrement() {
+            let input = document.getElementById('quantity');
+            if (input.value > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
 
     </script>
 

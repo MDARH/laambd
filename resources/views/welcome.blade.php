@@ -247,7 +247,7 @@
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 mx-auto w-10/12 text-center">
-            <div class="text-[#ffed12] text-2xl font-bold leading-9 my-8 col-span-2 px-4">
+            <div class="text-[#ffed12] text-lg md:text-2xl font-bold leading-9 my-8 col-span-2 px-4">
                 অবশ্যই ৪৫/৬০ দিন খেতে হবে সেক্ষেত্রে ১ কেজির ফুল কোর্স অর্ডার করা উত্তম হবে এবং ফুল কোর্স শেষ করতে পারলে যে রোগের জন্য নিচ্ছেন সেই রোগ টি ভিতর থেকে সারাজিবনের জন্য নিঃশেষ হয়ে যাবে ইনশাআল্লাহ
             </div>
             <div class="text-4xl font-bold font-hind my-8">
@@ -265,12 +265,12 @@
         </div>
     </section>
     <section class="py-4">
-        <div class="border rounded-lg shadow-laam mx-auto w-8/12 my-4 p-4">
-            <h2 class="text-center text-md md:text-3xl text-[#056C00] font-bold font-tiro_bn">
+        <div class="border rounded-lg shadow-laam mx-4 md:mx-auto w-full md:w-8/12 my-4 p-4">
+            <h2 class="text-center text-xl md:text-3xl text-[#056C00] font-bold font-tiro_bn">
                 অর্ডার করতে আপনার সঠিক তথ্য দিয়ে নিচের ফর্মটি সম্পূর্ণ পূরন করুন
             </h2>
         </div>
-        <form action="" class="border-4 rounded-lg shadow-form border-[#098D2E] w-full md:w-8/12 mx-auto">
+        <form action="" class="border-4 rounded-lg shadow-form border-[#098D2E] md:w-8/12 md:mx-auto mx-4">
             <div class="p-8">
                 <div class="text-xl font-semibold py-8">
                     পরিমান সিলেক্ট করুন

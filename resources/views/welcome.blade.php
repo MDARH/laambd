@@ -3,6 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
 
@@ -10,16 +18,34 @@
 
     <!-- Styles -->
     @vite('resources/css/app.css')
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        .swiper-wrapper {
+            width: 100%;
+            -webkit-transition-timing-function: linear !important;
+            transition-timing-function: linear !important;
+            position: relative;
+        }
 
+        .swiper-pagination-bullet {
+            background: #975fd7;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #4F46E5 !important;
+        }
+
+    </style>
 </head>
 <body>
-    <section class="bg-[#064403] flex flex-col justify-center items-center">
-        <div class="mx-auto py-8 px-2">
+    <section class="bg-[#064403]">
+        <div class="w-10/12 mx-auto py-8 px-2">
             <div class="border-2 px-2 border-[#ffff00] rounded-3xl shadow-inner">
                 <h1 class="text-[#ffff00] text-center font-bold font-hind text-2xl md:text-3xl lg:text-4xl drop-shadow-md px-2 py-4">হাজার হাজার টাকা অসুস্থ হয়ে নষ্ট করেছেন কিন্তু কোন সমাধান পাননি?</h1>
             </div>
         </div>
-        <div class="mx-auto w-full md:w-11/12 lg:3/4">
+        <div class="w-10/12 mx-auto md:w-11/12 lg:3/4">
             <p class="
             text-center text-white text-lg md:text-xl lg:text-3xl
             font-semibold font-tiro_bn
@@ -28,12 +54,12 @@
                 আলহামদুলিল্লাহ! <span class="text-[#fffb87]">এই পর্যন্ত ১০০০০+</span> মানুষ আমাদের এই কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণটি খেয়ে সমাধান পেয়েছে বিভিন্ন রোগ থেকে।
             </p>
         </div>
-        <div class="my-5 px-4">
-            <div class="border-4 border-[#ffff00] rounded-3xl w-[990px] h-[550px] mx-auto lg:mx-24 overflow-hidden">
-                <iframe width="990" height="550" src="https://www.youtube.com/embed/4MxhPk6Prgc?si=odSQ_3GiN7_tGBzC" title="আমাদের মিশ্রণ টি নিয়ে ৩ জন ডাক্টরের মতামত"></iframe>
+        <div class="w-10/12 mx-auto my-5 px-2">
+            <div class="border-4 border-[#ffff00] rounded md:rounded-3xl w-full md:w-[990px] h-[360px] md:h-[550px] mx-auto lg:mx-24 overflow-hidden">
+                <iframe class="w-full h-full" width="640" height="360" src="https://www.youtube.com/embed/4MxhPk6Prgc" title="আমাদের মিশ্রণ টি নিয়ে ৩ জন ডাক্টরের মতামত"></iframe>
             </div>
         </div>
-        <div class="py-4">
+        <div class="flex justify-center py-6">
             <button class="flex items-center gap-2 text-white hover:text-[#ffec00] bg-[#05B858] hover:bg-black hover:animate-zigzag text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
                 <x-lineawesome-hand-point-right class="h-8" /> <span>অর্ডার করতে ক্লিক করুন</span>
             </button>
@@ -76,9 +102,8 @@
     </section>
     <section class="bg-[#064403]">
         <div class="w-full md:w-10/12 mx-auto p-4">
-
-            <div class="flex items-center">
-                <div class="w-1/2 py-10">
+            <div class="flex md:flex-row flex-col-reverse items-center">
+                <div class="w-full md:w-1/2 py-10">
                     <h2 class="text-[#ffec00] bg-[#008000] font-bold text-center text-2xl drop-shadow-2xl p-4 border-2 rounded-xl"> উপরের সমস্যা গুলোর সমাধান না করলে যে ভয়াবহ সমস্যা গুলো হবে</h2>
 
                     <div class="border-4 border-[#ffec00] shadow-3xl rounded-3xl mx-2 my-4">
@@ -101,7 +126,7 @@
                         </ul>
                     </div>
                     <div class="my-10">
-                        <h3 class="text-[#ffec00] text-4xl font-bold font-hind">খাওয়ার নিয়মাবলীঃ</h3>
+                        <h3 class="text-[#ffec00] text-4xl font-bold font-hind text-center md:text-start">খাওয়ার নিয়মাবলীঃ</h3>
 
                         <ul class="my-4 text-2xl text-white font-semibold font-hind">
                             <li class="flex gap-2">
@@ -113,124 +138,115 @@
                                 <span>রাতে খাবারের পরে</span>
                                 <span class="text-[#ffec00]"> দুই চামচ।</span></li>
                         </ul>
-                        <div class="py-4 ">
+                        <div class="py-4 flex justify-center">
                             <button class="flex items-center gap-2 text-white hover:text-[#ffec00] hover:animate-zigzag bg-[#05B858] hover:bg-black text-xl font-bold px-4 py-2 border-white border-2 font-hind rounded-full">
                                 <x-lineawesome-hand-point-right class="h-8" /> <span>অর্ডার করতে ক্লিক করুন</span>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/2 mx-auto">
+                <div class="w-full md:w-1/2 mx-auto">
                     <img class="mx-auto w-5/6 rounded border-2 border-[#ffec00]" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/01/image_ajS.webp?w=1024&ssl=1" alt="" class="w-96">
                 </div>
             </div>
         </div>
     </section>
     <section class="bg-[#028833] py-10">
-        <div class="w-8/12 mx-auto">
-            <h2 class="text-white text-3xl font-semibold text-center">
+        <div class="w-full md:w-8/12 px-2 mx-auto">
+            <h2 class="text-white text-md md:text-3xl font-semibold text-center">
                 <span>এটি সম্পূর্ণ হোমমেড একটি প্রোডাক্ট তাই কোন পার্শ্ব প্রতিক্রিয়া নেই।</span>
                 <span class="text-[#ffec00]">লিমিটেড স্টকলিমিটেড স্টক,</span>
                 <span>তাই দেরি না করে এখন-ই</span>
                 <span class="text-[#ffec00]">অর্ডার করুন।</span>
             </h2>
             <div class="p-4">
-                <div class="flex justify-center items-center gap-2 font-hind text-3xl text-[#ffffff] font-bold border-2 border-[#ffec00] rounded py-2">
+                <div class="flex justify-center items-center gap-2 font-hind text-lg md:text-3xl text-[#ffffff] font-bold border-2 border-[#ffec00] rounded py-2">
                     <span>কল করুন</span>
                     <x-fas-phone-alt class="h-6" />
                     <span>+880 1606-700289</span>
                 </div>`
             </div>
-            <div class="text-center text-4xl font-bold text-white py-8">
+            <div class="text-center text-lg md:text-4xl font-bold text-white py-8">
                 ⭐⭐⭐
                 <span>সম্মানিত</span>
                 <span class="text-[#ffec00]">কাস্টমারদের মতামত</span>
                 ⭐⭐⭐
             </div>
         </div>
-        <div class="w-10/12 flex flex-wrap gap-2 mx-auto">
-            <div class="border-2 border-[#ffec00] w-2/10">
-                <iframe width="380" height="550" src="https://www.youtube.com/embed/QbPghkSWvCc?si=QvRNMKhvJ9J9Bp_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="w-8/10">
-                <div class="flex gap-2 transition-transform duration-500 relative overflow-hidden select-none items">
-                    <div class="w-1/4 flex-shrink-0 item item1">
-                        <img src="https://via.placeholder.com/250x550?text=Slide+1" alt="Slide 1" class="w-full">
-                    </div>
-                    <div class="w-1/4 flex-shrink-0 item item2">
-                        <img src="https://via.placeholder.com/250x550?text=Slide+2" alt="Slide 2" class="w-full">
-                    </div>
-                    <div class="w-1/4 flex-shrink-0 item item3">
-                        <img src="https://via.placeholder.com/250x550?text=Slide+3" alt="Slide 3" class="w-full">
-                    </div>
-                    <div class="w-1/4 flex-shrink-0 item item4">
-                        <img src="https://via.placeholder.com/250x550?text=Slide+4" alt="Slide 4" class="w-full">
-                    </div>
-                    <div class="w-1/4 flex-shrink-0 item item5">
-                        <img src="https://via.placeholder.com/250x550?text=Slide+5" alt="Slide 5" class="w-full">
-                    </div>
-                    <div class="w-1/4 flex-shrink-0 item item6">
-                        <img src="https://via.placeholder.com/250x550?text=Slide+6" alt="Slide 6" class="w-full">
-                    </div>
-                    <div class="w-1/4 flex-shrink-0 item item7">
-                        <img src="https://via.placeholder.com/250x550?text=Slide+7" alt="Slide 7" class="w-full">
-                    </div>
-                    <div class="w-1/4 flex-shrink-0 item item8">
-                        <img src="https://via.placeholder.com/250x550?text=Slide+8" alt="Slide 8" class="w-full">
-                    </div>
-                </div>
-
-                <!-- Dot Navigation -->
-                <div class="flex justify-center mt-4">
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="0"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="1"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="2"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="3"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="0"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="1"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="2"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer" data-index="3"></span>
+        <div class="w-full md:w-10/12 flex flex-wrap md:flex-nowrap gap-2 mx-auto">
+            <div class="w-full md:w-4/12">
+                <div class="w-[284px] block mx-auto">
+                    <iframe class="border-2 border-[#ffec00]" width="280" height="550" src="https://www.youtube.com/embed/QbPghkSWvCc?si=QvRNMKhvJ9J9Bp_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
-            {{-- <div class="relative w-full max-w-lg mx-auto">
-                <!-- Slideshow Images -->
-                <div class="slideshow-container">
-                    <div class="mySlides">
-                        <img class="h-[540px] "
-                        src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+            <div class="w-full overflow-hidden">
+                <div class="swiper multiple-slide-carousel swiper-container relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-[550px] flex justify-center items-center">
+                                <img class="h-[480px] rounded-2xl border-2 border-amber-300" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="mySlides">
-                        <img class="h-[540px] " src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
-                    </div>
-                    <div class="mySlides">
-                        <img class="h-[540px] " src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/07/450723203_122156567780152330_406095415020683934_n.jpg?fit=526%2C1169&ssl=1" alt="">
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-
-                <!-- Dot Navigation -->
-                <div class="flex justify-center mt-4">
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer"></span>
-                    <span class="dot h-4 w-4 mx-1 rounded-full bg-gray-400 cursor-pointer"></span>
-                </div>
-            </div> --}}
+            </div>
 
         </div>
     </section>
     <section class="bg-[#064403] py-4">
-        <div class="grid grid-cols-2 gap-2 w-10/12 mx-auto text-2xl text-center text-[#FFFFE2] font-hind font-bold">
-            <div class="flex border border-[#ffec00] rounded py-4 px-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 w-10/12 mx-auto text-2xl text-center text-[#FFFFE2] font-hind font-bold">
+            <div class="flex flex-wrap md:flex-nowrap justify-center gap-2 border border-[#ffec00] rounded py-4 px-2">
                 <p>১ কেজি কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণ এর রেগুলার প্রাইস <br> <span>২০০০ টাকা</span></p>
                 <p>তবে বর্তমানে অফার প্রাইস <br> <span>১৫৮০ টাকা</span></p>
             </div>
-            <div class="flex border border-[#ffec00] rounded py-4 px-2">
+            <div class="flex flex-wrap md:flex-nowrap justify-center gap-2 border border-[#ffec00] rounded py-4 px-2">
                 <p>১ কেজি কালোজিরা রসুন মধু এবং ইরানী জাফরান মসলা মিশ্রণ এর রেগুলার প্রাইস <br> <span>২০০০ টাকা</span></p>
                 <p>তবে বর্তমানে অফার প্রাইস <br> <span>১৫৮০ টাকা</span></p>
             </div>
         </div>
-        <div class="grid grid-cols-3 mx-auto w-10/12 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 mx-auto w-10/12 text-center">
             <div class="text-[#ffed12] text-2xl font-bold leading-9 my-8 col-span-2 px-4">
                 অবশ্যই ৪৫/৬০ দিন খেতে হবে সেক্ষেত্রে ১ কেজির ফুল কোর্স অর্ডার করা উত্তম হবে এবং ফুল কোর্স শেষ করতে পারলে যে রোগের জন্য নিচ্ছেন সেই রোগ টি ভিতর থেকে সারাজিবনের জন্য নিঃশেষ হয়ে যাবে ইনশাআল্লাহ
             </div>
@@ -249,17 +265,17 @@
         </div>
     </section>
     <section class="py-4">
-        <div class="border rounded-lg text-3xl shadow-laam mx-auto w-8/12 my-4 p-4">
-            <h2 class="text-center text-[#056C00] font-bold font-tiro_bn">
+        <div class="border rounded-lg shadow-laam mx-auto w-8/12 my-4 p-4">
+            <h2 class="text-center text-md md:text-3xl text-[#056C00] font-bold font-tiro_bn">
                 অর্ডার করতে আপনার সঠিক তথ্য দিয়ে নিচের ফর্মটি সম্পূর্ণ পূরন করুন
             </h2>
         </div>
-        <form action="" class="border-4 rounded-lg shadow-form border-[#098D2E] w-8/12 mx-auto">
+        <form action="" class="border-4 rounded-lg shadow-form border-[#098D2E] w-full md:w-8/12 mx-auto">
             <div class="p-8">
                 <div class="text-xl font-semibold py-8">
                     পরিমান সিলেক্ট করুন
                 </div>
-                <div class="grid grid-cols-2 gap-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                     <div class="border rounded p-6">
                         <div class="flex gap-2">
                             <input type="radio">
@@ -290,34 +306,84 @@
                             <p class="mt-4">2,940.00৳</p>
                         </div>
                     </div>
-                   
+
                 </div>
-                <div class="grid grid-cols-2 gap-4 py-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-14 py-6">
                     <div class="font-tiro_bn">
 
                         <h3 class="text-xl font-tiro_bn font-bold my-6">বিলিং এড্রেস</h3>
-                        <div class="flex flex-col text-md">
-                            <label class="text-[#098d2e] font-semibold" for="name">আপনার নাম লিখুন <span class="text-red-500">*</span></label>
-                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 font-semibold p-2" type="text" id="name" placeholder="নাম লিখুন">
+                        <div class="flex flex-col text-sm font-semibold mt-4">
+                            <label class="text-[#098d2e]" for="name">আপনার নাম লিখুন <span class="text-red-500">*</span></label>
+                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 p-2" type="text" id="name" placeholder="নাম লিখুন">
                         </div>
-                        <div class="flex flex-col text-md">
-                            <label class="text-[#098d2e] font-semibold" for="address">আপনার সম্পূর্ণ ঠিকানা লিখুন<span class="text-red-500">*</span></label>
-                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 font-semibold p-2" type="text" id="address" placeholder="ঠিকানা লিখুন, থানা ও জেলা সহ">
+                        <div class="flex flex-col text-sm font-semibold mt-4">
+                            <label class="text-[#098d2e]" for="address">আপনার সম্পূর্ণ ঠিকানা লিখুন<span class="text-red-500">*</span></label>
+                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 p-2" type="text" id="address" placeholder="ঠিকানা লিখুন, থানা ও জেলা সহ">
                         </div>
-                        <div class="flex flex-col text-md">
-                            <label class="text-[#098d2e] font-semibold" for="mobile_number">আপনার মোবাইল নাম্বার লিখুন<span class="text-red-500">*</span></label>
-                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 font-semibold p-2" type="text" id="mobile_number" placeholder="মোবাইল নাম্বার">
+                        <div class="flex flex-col text-sm font-semibold mt-4">
+                            <label class="text-[#098d2e]" for="mobile_number">আপনার মোবাইল নাম্বার লিখুন<span class="text-red-500">*</span></label>
+                            <input class="border-2 outline-none rounded border-[#098d2e] placeholder-gray-700 p-2" type="text" id="mobile_number" placeholder="মোবাইল নাম্বার">
                         </div>
                     </div>
                     <div>
                         <h3 class="text-xl font-tiro_bn font-bold my-6">আপনার অর্ডার</h3>
 
-                        <div>
-                            
+                        <div class="text-sm">
+                            <div class="text-[#098D2E]">
+                                <div class="grid grid-cols-3 border-b-2 border-dotted font-bold">
+                                    <div class="text-start col-span-2">Product</div>
+                                    <div class="text-center">Subtotal</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="grid grid-cols-3 items-center border-b-2 border-dotted">
+                                    <div class="col-span-2 font-bold flex items-center py-4">
+                                        <img class="max-h-12 rounded" src="https://i0.wp.com/laambd.com/wp-content/uploads/2024/01/018-4.png" alt="Product">
+                                        <div class="px-2">
+                                            কালোজিরা রসুন মধু এবং ইরানি জাফরান মসলা এক কেজি
+                                        </div>
+                                        <span class="mr-2">×&nbsp;1</span>
+                                    </div>
+                                    <div class="text-center px-2">
+                                        1,580.00৳
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 items-center">
+                                    <div class="text-[#098D2E] font-semibold col-span-2">
+                                        Subtotal
+                                    </div>
+                                    <div class="text-center">
+                                        1,580.00৳
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-center border-b-2 border-dotted">
+                                    <div class="text-[#098D2E] font-semibold">
+                                        Shipping
+                                    </div>
+                                    <div class="col-span-2 text-center px-4">
+                                        ডেলিভারি চার্জ ফ্রি
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-center font-bold">
+                                    <div class="col-span-2 text-[#098D2E]">
+                                        Total
+                                    </div>
+                                    <div class="text-center">
+                                        1,580.00৳
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
+                        <div class="my-4">
+                            <ul>
+                                <li class="py-4">ক্যাশ অন ডেলিভারি</li>
+                                <li class="bg-[#EAFFEF] px-8 py-4">পণ্য হাতে পেয়ে মূল্য পরিশোধ করবো</li>
+                            </ul>
+                        </div>
+                        <button class="border-4 shadow-lg border-[#FFEC00] bg-[#064403] hover:bg-[#005E00] text-white font-bold text-center block justify-center py-4 px-5 my-4 mx-auto rounded-full">
                             এখানে ক্লিক করে অর্ডারটি সম্পন্ন করুন
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -334,80 +400,33 @@
     </footer>
 
     <script>
-        const slider = document.querySelector('.items');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            slider.classList.add('active');
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
-            console.log("erreerre", scrollLeft)
-        });
-
-        slider.addEventListener('mouseleave', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-
-        slider.addEventListener('mouseup', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-
-        slider.addEventListener('mousemove', (e) => {
-            if (!isDown) return; // stop the fn from running
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 2;
-            slider.scrollLeft = scrollLeft - walk;
-
-            console.log('sdsd', scrollLeft)
-            console.log(slider.scrollLeft)
-        });
-
-
-        // touchEvents
-
-        slider.addEventListener('touchstart', (e) => {
-            isDown = true;
-            slider.classList.add('active');
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
-        });
-
-        slider.addEventListener('touchend', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-
-        slider.addEventListener('touchcancel', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-
-        slider.addEventListener('touchmove', (e) => {
-            if (!isDown) return; // stop the fn from running
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 2;
-            slider.scrollLeft = scrollLeft - walk;
-        });
-
-        // Quantity of Product
-        function increment() {
-            let input = document.getElementById('quantity');
-            input.value = parseInt(input.value) + 1;
-        }
-
-        function decrement() {
-            let input = document.getElementById('quantity');
-            if (input.value > 1) {
-                input.value = parseInt(input.value) - 1;
+        var swiper = new Swiper(".multiple-slide-carousel", {
+            loop: true
+            , autoplay: {
+                delay: 1200
+                , disableOnInteraction: true
+            , }
+            , pagination: {
+                el: ".swiper-pagination"
+                , clickable: true
+            , }
+            , slidesPerView: 1
+            , spaceBetween: 8
+            , breakpoints: {
+                1920: {
+                    slidesPerView: 4
+                    , spaceBetween: 30
+                }
+                , 1028: {
+                    slidesPerView: 4
+                    , spaceBetween: 30
+                }
+                , 990: {
+                    slidesPerView: 2
+                    , spaceBetween: 0
+                }
             }
-        }
+        });
 
     </script>
 
